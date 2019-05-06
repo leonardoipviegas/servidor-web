@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Meteorologia</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+    <p>Descubra a meteorologia.</p>
+
+    <form>
+        <input placeholder="Localização">
+        <button type="submit">Procurar</button>
+    </form>
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+    </div>
+    {{>footer}}
+    <script src="../js/app.js"></script>
+</body>
