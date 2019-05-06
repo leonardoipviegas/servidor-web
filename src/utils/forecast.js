@@ -8,7 +8,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location!', undefined);
         } else {
-            callback(undefined, ('Atualmente estão ' + body.currently.temperature + ' ºC. Existe uma chance de ' + (body.currently.precipProbability * 100) + '% de chuva. ' + body.daily.data[0].summary + ' Hoje a temperatura varia entre ' + body.daily.data[0].temperatureMin + 'ºC e ' + body.daily.data[0].temperatureMax + 'ºC. '));
+            callback(undefined, ('Atualmente estão ' + body.currently.temperature + ' ºC. Existe uma chance de ' + (body.currently.precipProbability * 100) + '% de chuva. ' + body.daily.data[0].summary + ' Hoje a temperatura varia entre ' + body.daily.data[0].temperatureMin + ' ºC e ' + body.daily.data[0].temperatureMax + ' ºC. '));
         }
     });
 }
